@@ -1,0 +1,23 @@
+{
+	"name": "idb-api",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+    "main": "./dist/idb-class.umd.js",
+    "module": "./dist/idb-class.js",
+    "exports": {
+        ".": {
+            "require": "./dist/idb-class.umd.js",
+            "import": "./dist/idb-class.js"
+        }
+    },
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.33.0",
+		"typescript": "^5.0.2",
+		"vite": "^4.3.2"
+	}
+}

@@ -1,0 +1,9 @@
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/tmp/app
+    environment:
+      - DISPLAY=${DISPLAY:-0}
