@@ -1,16 +1,28 @@
 {
 	"name": "idb-api",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.1.0",
+	"description": "A simple implementation of IndexedDB api.",
+	"keywords": ["indexedDb", "typescript"],
+	"licence": "Apache-2.0",
+	"homepage": "https://github.com/onadrog/idbApi",
+	"author": {
+		"name": "Sébastien Gordano",
+		"email": "sebastien.gordano@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/onadrog/idbApi"
+	},
 	"type": "module",
-    "main": "./dist/idb-class.umd.js",
-    "module": "./dist/idb-class.js",
-    "exports": {
-        ".": {
-            "require": "./dist/idb-class.umd.js",
-            "import": "./dist/idb-class.js"
-        }
-    },
+	"main": "./dist/idb-class.umd.js",
+	"module": "./dist/idb-class.js",
+	"exports": {
+		".": {
+			"require": "./dist/idb-class.umd.js",
+			"import": "./dist/idb-class.js"
+		}
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build"
